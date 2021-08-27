@@ -1,0 +1,85 @@
+
+<style>
+    #site_map {
+  border: 1px solid black;
+  width: 720px;
+  height: auto;
+  color: #616060;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin-top: 10px;
+  float: right;
+}
+#site_map p {
+  margin-left: 20px;
+  display: inline-block;
+
+}
+#site_map p:hover{
+    color: red;
+}
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 6px 0;
+  border-color: #6d6d6d transparent transparent;
+  margin: 0 2px;
+  position: relative;
+  bottom: 0.12em;
+  -webkit-transform: scaleX(0.83333);
+  -ms-transform: scaleX(0.83333);
+  transform: scaleX(0.83333);
+}
+p:hover {
+  color: red;
+  visibility: visible;
+}
+.help .dropdown {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 5px 0;
+  position: relative;
+  z-index: -1;
+}
+.help:hover {
+  visibility: visible;
+}
+
+</style>
+<a>
+
+    <p>Ship to <span></span> US/ USD</p>
+    <span class="triangle"></span>
+
+</a>
+<a>
+    <p>Quick Guide</p>
+</a>
+
+<a>
+    <p class="help">Help</p>
+    <span class="triangle"></span>
+    <span class="dropdown">
+        <p>Help Center</p>
+        <p>Chat</p>
+    </span>
+</a>
+
+<p>|</p>
+<a>
+    <p>Media & Investing</p>
+</a>
+<a>
+    <p>Sell with Us</p>
+    <span class="triangle"></span>
+</a>
+<p>|</p>
+<a>
+    <p>Site/Language</p>
+    <span class="triangle"></span>
+</a>
