@@ -282,12 +282,12 @@ hr {
   margin-top: 20px;
   margin-left: 2%;
 }
-#image_box {
+#image_box1 {
   width: 90%;
   border: 1px solid rgb(197, 197, 197);
   margin-left: 5%;
 }
-#image_box img {
+#image_box1 img {
   width: 100%;
 }
 .small_img {
