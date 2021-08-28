@@ -1,3 +1,11 @@
+
+function Home(){
+ window.location.href = "index.html"
+}
+
+
+
+
 var Search_button = document.getElementById("Search_button")
 
 
