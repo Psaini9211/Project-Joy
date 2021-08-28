@@ -419,8 +419,8 @@ li span img {
   text-align: center;
   font-size: 15px;
   background-size: auto;
-  margin-top: -220px;
-  margin-left: -140px;
+
+  margin-left: -200px;
   border: 1px solid rgb(240, 237, 237);
   /* Position the tooltip */
   position: absolute;
