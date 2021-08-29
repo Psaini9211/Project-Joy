@@ -108,6 +108,7 @@ var total = 0;
         var count_div = document.createElement("span")
         count_div.setAttribute("id", "QYT_DIV")
         count_div.classList.add("Qyt_div", "Custmise_Product_box_style")
+        count_div.innerText = "1"
         var pluse_btn = document.createElement("button")
         pluse_btn.setAttribute("id", "pluse_btn")
         pluse_btn.innerText = "+"
