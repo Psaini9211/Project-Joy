@@ -585,3 +585,81 @@ table {
   margin-left: 10px;
   cursor: pointer;
 }
+#cart_count {
+  width: 17px;
+  height: 15px;
+  border-radius: 7px;
+  background-color: red;
+  margin-top: -27px;
+  margin-left: 13px;
+  position: absolute;
+  color: white;
+  text-align: center;
+}
+.buy_cart_btn #cart_popup {
+  visibility: hidden;
+  width: 600px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 15px;
+  padding: 5px 0;
+  padding-bottom: 20px;
+  margin-top: -500px;
+  margin-left: -500px;
+  border: 1px solid rgb(240, 237, 237);
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.close_btn {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: rgb(119, 119, 119);
+  font-size: 30px;
+  cursor: pointer;
+  float: right;
+  font-weight: 0;
+  margin-top: -5px;
+  border: 1px solid black;
+}
+#cart_popup p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+  font-size: 20px;
+  margin-top: 50px;
+}
+#cart_popup h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 17px;
+  margin-top: 30px;
+}
+#cart_popup div {
+  margin-left: 22%;
+  margin-top: 50px;
+}
+#View_btn {
+  width: 170px;
+  height: 25px;
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+  cursor: pointer;
+}
+#continue_shoping {
+  width: 170px;
+  height: 25px;
+  background-color: white;
+  border: 1px solid rgb(39, 39, 39);
+  color: rgb(39, 39, 39);
+  margin-left: 5px;
+  cursor: pointer;
+}
+#continue_shoping:hover {
+  background-color: rgb(189, 189, 189);
+}
+#View_btn:hover {
+  background-color: rgb(235, 207, 207);
+}
