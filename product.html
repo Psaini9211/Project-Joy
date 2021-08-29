@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="product.css">
-     <link rel="icon" href="//static.joybuy.com/ept_m/res/en/favicon-48.png"
+    <link rel="icon" href="//static.joybuy.com/ept_m/res/en/favicon-48.png"
         mce_href="//static.joybuy.com/ept_m/res/en/favicon-48.png" type="image/x-icon">
     <title>Global Online Shopping Site: Online Shopping for Electronics, Clothing, Toys and More</title>
     <title>Document</title>
@@ -66,7 +66,7 @@
             </ul>
         </div>
         <div class="header_container">
-            <div class="icon" onclick="Home()">
+            <div class="icon" onclick="Home()" >
                 <img
                     src="https://img10.joybuy.com/tuangou/jfs/t1/24107/24/11739/7795/5c924d58Eae30ea8a/815e2989f4164d36.png">
             </div>
@@ -101,7 +101,7 @@
             <div id="login_cart">
                 <div id="cart" class="login_cart"> <img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTp3AW-PG_UFkMuIqKAbvScJCSE1QU7GHTZZyJiPTxpJNlh-VV3TohLtMRSrdpXRJtGG0&usqp=CAU">
-                    Cart</div>
+                    Cart <div id="cart_count"></div> </div>
                 <div id="Login" class="login_cart"> <img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDkBA_J8kCotskBY4N9xpq_hte-GTeTCE_XGK5vJfR3ScRZvlepZ9TpFI9ZxupNBDBKxE&usqp=CAU">
                     Log in
@@ -267,7 +267,7 @@
                 </div>
                 <div id="Qyt_main">
                     <button id="Minus_btn">-</button>
-                <div class=" Qyt_div Custmise_Product_box_style">1</div>
+                <div class=" Qyt_div Custmise_Product_box_style" id="QYT_DIV">1</div>
                 <button id="pluse_btn">+</button>
                 <p>In Stock</p>
                 </div>
@@ -275,6 +275,15 @@
              <div class="buy_cart_btn">
                  <div >
                      <button id="cart_btn">ADD TO CART</button>
+                     <span id="cart_popup">
+                        <button id="close" class="close_btn"><i class="fa fa-close">x</i></button>
+                        <p>&#9745; Added to your shoping Cart!</p>
+                        <h6><span id="count_popup"></span>Items in your cart now</h6>
+                        <div>
+                            <button id="View_btn">View your Cart</button>
+                            <button id="continue_shoping">Continue Shopping</button>
+                        </div>
+                     </span>
                  </div>
                  <div>
                     <button id="buy_btn">BUY IT NOW</button>
