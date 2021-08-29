@@ -1,0 +1,543 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: rgb(235, 232, 232);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nagivation_bar {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+#site_map {
+  float: right;
+  width: 55%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: rgb(68, 67, 67);
+  margin-top: 10px;
+}
+li {
+  list-style: none;
+  float: left;
+  margin-left: 20px;
+}
+li:hover {
+  color: red;
+}
+li span img {
+  width: 17px;
+}
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 6px 0;
+  border-color: #6d6d6d transparent transparent;
+  margin: 0 2px;
+  position: relative;
+  bottom: 0.12em;
+  -webkit-transform: scaleX(0.83333);
+  -ms-transform: scaleX(0.83333);
+  transform: scaleX(0.83333);
+}
+.Ship_popup .popup {
+  visibility: hidden;
+  width: 300px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 5px 0;
+  margin-top: 40px;
+  margin-left: -140px;
+  border: 1px solid rgb(240, 237, 237);
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.Ship_popup:hover .popup {
+  visibility: visible;
+}
+.Ship_popup .popup form select {
+  width: 90%;
+  height: 40px;
+}
+.Ship_popup .popup form {
+  margin-left: 20px;
+  padding-bottom: 30px;
+}
+.Ship_popup .popup form label {
+  font-weight: bold;
+}
+.Ship_popup .popup form input {
+  margin-left: 22%;
+  margin-top: 25px;
+  width: 50%;
+  height: 32px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+.help .popup_help {
+  visibility: hidden;
+  width: 150px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 5px 0;
+  margin-top: 20px;
+  margin-left: -80px;
+  border: 1px solid rgb(240, 237, 237);
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.help:hover .popup_help {
+  visibility: visible;
+}
+.popup_help p {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.header_container {
+  width: 100%;
+  min-height: 100px;
+  padding-top: 20px;
+  float: left;
+  clear: right;
+  margin-top: 10px;
+  background-color: white;
+}
+.icon {
+  margin-left: 60px;
+  float: left;
+}
+.search_bar {
+  float: left;
+  margin-left: 7%;
+  margin-top: 15px;
+}
+#Search_button {
+  background-color: rgb(195, 194, 194);
+  width: 70px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+}
+.search_bar input {
+  width: 470px;
+  height: 35px;
+  border: none;
+  background-color: rgb(195, 194, 194);
+  margin-left: -5px;
+  border-left: 1px solid rgb(100, 99, 99);
+}
+#Search_button #popup_Cat,
+#left_icon #popup_Cat2 {
+  visibility: hidden;
+  width: 180px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 5px 0;
+  margin-top: 25px;
+  margin-left: -57px;
+  border: 1px solid rgb(240, 237, 237);
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+#Search_button #popup_Cat p,
+#left_icon #popup_Cat2 p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#click_button_search {
+  background-color: red;
+  width: 40px;
+  height: 35px;
+  float: right;
+  border: none;
+  cursor: pointer;
+}
+#click_button_search > img {
+  width: 40px;
+  height: 35px;
+}
+#login_cart {
+  float: right;
+  margin-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: rgb(39, 38, 38);
+  margin-right: 10px;
+}
+.login_cart {
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.login_cart img {
+  width: 20px;
+  margin-right: 5px;
+  margin-bottom: -3px;
+}
+#login_cart p {
+  display: inline-block;
+  margin-right: 10px;
+}
+.login_cart:hover {
+  color: red;
+}
+#Login #login_popup {
+  visibility: hidden;
+  width: 200px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 15px;
+  padding: 5px 0;
+  padding-bottom: 20px;
+  margin-top: 25px;
+  margin-left: -110px;
+  border: 1px solid rgb(240, 237, 237);
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+#login_popup p {
+  margin-top: 25px;
+}
+#login_popup_button {
+  width: 80%;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#social_media img {
+  width: 25px;
+  display: inline-block;
+}
+#social_media {
+  margin-top: 10px;
+}
+.social_media {
+  border-bottom: 1px solid rgb(168, 167, 167);
+  padding-bottom: 20px;
+  width: 70%;
+  margin-left: 15%;
+}
+#popup_sinup_btn {
+  width: 70%;
+  margin-top: 20px;
+  border: 1px solid red;
+  height: 30px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+#cart_count {
+  width: 17px;
+  height: 15px;
+  border-radius: 7px;
+  background-color: red;
+  margin-top: -27px;
+  margin-left: 13px;
+  position: absolute;
+  color: white;
+  text-align: center;
+}
+hr {
+  border: 1px solid red;
+  margin-top: -3px;
+}
+#MyShopingCart {
+  width: 100%;
+  min-height: 55px;
+  background-color: white;
+}
+#MyShopingCart h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding-top: 17px;
+  padding-left: 60px;
+  float: left;
+}
+#MyShopingCart form {
+  float: right;
+  margin-right: 40px;
+  padding-top: 13px;
+}
+#MyShopingCart form select {
+  width: 200px;
+  height: 30px;
+  border: 1px solid rgb(160, 160, 160);
+}
+#sin_in {
+  width: 95%;
+  margin-left: 3%;
+  min-height: 35px;
+  background-color: rgb(250, 206, 192);
+  color: rgb(255, 115, 65);
+}
+#sin_in p {
+  display: inline-block;
+  padding: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+#sin_in button {
+  width: 70px;
+  height: 25px;
+  margin-left: 20px;
+  background-color: rgb(250, 206, 192);
+  border: 0.5px solid black;
+  cursor: pointer;
+}
+#sin_in button:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+#select_item {
+  background-color: white;
+  min-height: 60px;
+  width: 95%;
+  margin-left: 3%;
+  display: inline-block;
+}
+#select_item p {
+  display: inline-block;
+  padding-top: 20px;
+}
+#select_item p:nth-of-type(1) {
+  margin-left: 10px;
+  font-size: 15px;
+}
+#select_item p:nth-of-type(2) {
+  margin-left: 550px;
+  font-size: 15px;
+  color: grey;
+}
+#select_item p:nth-of-type(3) {
+  margin-left: 200px;
+  font-size: 15px;
+  color: grey;
+}
+#select_item input {
+  margin-left: 30px;
+}
+#Product_list_itme {
+  width: 95%;
+  margin-left: 3%;
+  min-height: 40px;
+}
+.check_box2::before {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  content: "";
+  border-radius: 100%;
+}
+.check_box2 {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  position: relative;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #d7d7d7;
+  border-radius: 100%;
+  padding: 0 !important;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: 0 !important;
+  vertical-align: middle;
+  margin-left: 30px;
+  display: inline-block;
+}
+.check_box2:checked {
+  border: 0;
+  border-radius: 100%;
+  background-color: #e9ecee;
+  width: 15px;
+  height: 15px;
+  background-image: url(//static.joybuy.com/ept/cart/20210524/components/cart/i/__sprite.png);
+  background-position: -13px -16px;
+}
+#joooooy {
+  display: inline-block;
+}
+#short_name {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.small_product_name {
+  width: 60%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 20px;
+}
+.cart_product_details {
+  background-color: white;
+  width: 100%;
+  height: 150px;
+}
+.cart_product_details div {
+  float: left;
+  margin-top: 70px;
+}
+.cart_product_details div:nth-of-type(2) {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 1px solid rgb(190, 190, 190);
+}
+.cart_product_details div:nth-of-type(2) img {
+  width: 99px;
+  height: 99px;
+}
+.cart_product_details div:nth-of-type(3) {
+  margin-left: 20px;
+  width: 34%;
+  margin-top: 20px;
+}
+.cart_product_details div:nth-of-type(3) p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.cart_product_details div:nth-of-type(4) {
+  margin-left: 75px;
+  margin-top: 20px;
+  color: red;
+}
+.cart_product_details div:nth-of-type(5) {
+  margin-left: 170px;
+  margin-top: 20px;
+}
+#Minus_btn,
+#pluse_btn {
+  width: 30px;
+  height: 30px;
+  float: left;
+  border: 1px solid black;
+  cursor: pointer;
+}
+#Minus_btn {
+  border-right: none;
+}
+#pluse_btn {
+  border-left: none;
+}
+#Qyt_main {
+  margin-left: 150px;
+}
+.Qyt_div {
+  border: 1px solid black;
+  width: 75px;
+  height: 22px;
+  text-align: center;
+  padding-top: 6px;
+  float: left;
+}
+.cart_product_details div:nth-of-type(6) {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+.fi-wish {
+  width: 18px;
+  height: 16px;
+  background-image: url(//static.joybuy.com/ept/cart/20210524/components/cart/i/__sprite.png);
+  background-position: 0 0;
+}
+.fi {
+  float: left;
+  height: 18px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.cart_product_details div:nth-of-type(7) {
+  margin-top: 20px;
+}
+.fi-del {
+  margin-left: 40px;
+  float: right;
+  width: 13px;
+  height: 18px;
+  background-image: url(//static.joybuy.com/ept/cart/20210524/components/cart/i/__sprite.png);
+  background-position: 0 -16px;
+}
+#payment_calculation {
+  width: 95%;
+  height: 60px;
+  margin-left: 3%;
+  margin-top: 15px;
+  background-color: white;
+}
+#payment_calculation .check_box2 {
+  margin-top: 20px;
+  float: left;
+}
+#payment_calculation p {
+  float: left;
+  margin-left: 20px;
+  margin-top: 19px;
+}
+#payment_calculation button {
+  width: 200px;
+  height: 35px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 13px;
+  float: left;
+}
+#payment_calculation button:hover {
+  background-color: rgb(219, 219, 219);
+}
+#payment_calculation button:nth-of-type(1) {
+  margin-left: 70px;
+}
+#payment_calculation button:nth-of-type(2) {
+  margin-left: 30px;
+}
+#payment_div {
+  float: left;
+  font-size: 15px;
+  color: gray;
+  margin-left: 10px;
+}
+#payment_div p:nth-of-type(2) {
+  float: left;
+  clear: left;
+  margin-top: 0px;
+}
+#payment_div p:nth-of-type(1) {
+  margin-top: 15px;
+}
+#CONTINUE {
+  float: right;
+  background-color: rgb(209, 32, 32);
+  width: 150px;
+  height: 60px;
+  border: none;
+  color: white;
+}
